@@ -1,25 +1,20 @@
 package com.vs.java.person;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
-public class EmployeeClass<E> {
-	String first_name;
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class EmployeeClass {
+	String first_name ;
 	String last_name;
 	String gender;
 	int age;
 	int weight;
+	//Array
 	
 	
-	public EmployeeClass() {
-		
-	}
 	
-
-	public EmployeeClass(String first_name2, String last_name2, String gender2, int age2) {
-		// TODO Auto-generated constructor stub
-	}
-
-
 	public void EmployeeClass(String first_name, String last_name, String gender, int age) {
 		// TODO Auto-generated method stub
 		//super();
@@ -27,17 +22,54 @@ public class EmployeeClass<E> {
 		this.last_name = last_name;
 		this.gender = gender;
 		this.age = age;
-		addValues(first_name,  last_name,  gender,  age);
+		addValues(first_name,last_name,gender,age);
+	
+	}
+	
+	
+	private void addValues(String first_name, String last_name, String gender, int age) {
+		// TODO Auto-generated method stub
+		ArrayList<String> FirstName = new ArrayList<String>();
+		ArrayList<String> LastName = new ArrayList<String>();
+		ArrayList<String>  Gender = new ArrayList<String>();
+		ArrayList<Integer> Age = new ArrayList<Integer>();
+		
+		FirstName.add(first_name);
+		LastName.add(last_name);
+		Gender.add(gender);
+		Age.add(age);
+		FirstName.get(0);
+		PrintValues(FirstName,LastName,Gender,Age);
+		}
+
+	private void PrintValues(ArrayList<String> FirstName, ArrayList<String> LastName, ArrayList<String> Gender, ArrayList<Integer> Age)
+	{
+		FirstName.get(0);
 		
 	}
-	public void addValues(String first_name,  String last_name,  String gender, int age) {
-		ArrayList<EmployeeClass> details = new ArrayList<EmployeeClass>();
-		details.add(new EmployeeClass(first_name,last_name,gender,age));
-		System.out.println(details.get(0));
-	}
-	@Override
-	public String toString() {
-		return "FirstName : " + first_name + "\n" + "LastName : " + last_name + "\n" + "age : " + age + "\n" + "gender : " + gender;
-	}
+//	public void addValues(String first_name[], String last_name[], String gender[], int age[],int count, Object[] String) {
+//		ArrayList<EmployeeClass> details = new ArrayList<EmployeeClass>();
+//		details.add(new EmployeeClass( first_name[count],  last_name[count],  gender[count], age[count]));
+//	}
+//	public void addValues(String first_name[], String last_name[], String gender[], int age[],int No_Of_Emp, Object[] String) {
+//		ArrayList<EmployeeClass> details = new ArrayList<EmployeeClass>();
+//		for(int i=0 ;i<No_Of_Emp ; i++)
+//		{
+//			//System.out.println(first_name[i]);
+//			details.add(new EmployeeClass( first_name[i],  last_name[i],  gender[i], age[i]));
+//		}
+//	}
+//	public void Print() {
+//		for(int i=0 ;i<first_name.length ; i++)
+//		{
+//			System.out.println(first_name[i]);
+//		}
+//	}
+	//ArrayList<EmployeeClass> details = new ArrayList<EmployeeClass>();
+//	
+//	@Override
+//	public String toString() {
+//		return "EmployeeClass [first_name=" + Arrays.toString(first_name) + "]";
+//	}
 	
 }

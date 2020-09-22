@@ -17,10 +17,12 @@ public class MainClass {
 		
 		while(count != No_Of_Emp) {
 			person.EmployeeClass(sc.next(),sc.next(),sc.next(),sc.nextInt());
-			System.out.println(person);	
+			
+			//System.out.println(person);	
 		count++;
 		}
-		
+		//person.Print();
+		//System.out.println(person.first_name[1]);
 		
 		
 		sc.close();
