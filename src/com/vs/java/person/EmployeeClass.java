@@ -39,14 +39,9 @@ public class EmployeeClass {
 		Gender.add(gender);
 		Age.add(age);
 		FirstName.get(0);
-		PrintValues(FirstName,LastName,Gender,Age);
+		//PrintValues(FirstName,LastName,Gender,Age);
 		}
 
-	private void PrintValues(ArrayList<String> FirstName, ArrayList<String> LastName, ArrayList<String> Gender, ArrayList<Integer> Age)
-	{
-		FirstName.get(0);
-		
-	}
 //	public void addValues(String first_name[], String last_name[], String gender[], int age[],int count, Object[] String) {
 //		ArrayList<EmployeeClass> details = new ArrayList<EmployeeClass>();
 //		details.add(new EmployeeClass( first_name[count],  last_name[count],  gender[count], age[count]));
