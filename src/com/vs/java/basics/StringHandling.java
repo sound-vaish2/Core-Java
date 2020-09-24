@@ -32,7 +32,7 @@ public class StringHandling {
 		//return the hashcode
 		System.out.println(InputString.hashCode());
 		//return the substring
-		System.out.println(InputString.substring(2,5));
+		System.out.println(InputString.substring(1,1));
 		System.out.println(InputString.replace(InputString.substring(1,1), InputString.substring(4,4)));
 		//replace the substring with new string
 		System.out.println(InputString.replaceAll("aish","hello"));
@@ -42,6 +42,15 @@ public class StringHandling {
 		System.out.println(InputString.split(InputString));
 		//returns string in Uppercase
 		System.out.println(InputString.toUpperCase());
+		//replace alternate characters with uppercase
+		System.out.println(InputString);
+		char[] ch =  InputString.toCharArray();
+		for(int i=0; i<ch.length; i=i+2){
+	         ch[i] = Character.toUpperCase(ch[i]);
+	      }
+	    System.out.println(new String(ch));
+		//System.out.println();
+		
 	}
 
 }

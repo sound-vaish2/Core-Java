@@ -1,5 +1,6 @@
 package com.vs.java.person;
 import java.util.Scanner;
+import java.util.*;
 public class MainClass {
 	
 	public MainClass() {
@@ -9,20 +10,26 @@ public class MainClass {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the entries you want to make: ");
-		//MainClass obj = new MainClass();
 		int No_Of_Emp;
 		No_Of_Emp = sc.nextInt();
 		int count = 0 ;
+		ArrayList<EmployeeClass> details = new ArrayList<EmployeeClass>();
 		EmployeeClass person = new EmployeeClass();
-		
+		BankAccount Account = new BankAccount() ;
+		Account.AccountNo = 123456;
+		Account.IFSCcode = 5373888;
+		Account.MobNo = 98762545;
 		while(count != No_Of_Emp) {
-			person.EmployeeClass(sc.next(),sc.next(),sc.next(),sc.nextInt());
-			
-			//System.out.println(person);	
+			person.EmployeeClass(sc.next(),sc.next(),sc.next(),sc.nextInt(),Account);
+			details.add(person);
+			//details.add(Account);
 		count++;
 		}
-		//person.Print();
-		//System.out.println(person.first_name[1]);
+		Account.SavingAccount(Account);
+		//person.EmployeeClass(Account);
+		person.SavingAccount(233443,213443,12322222);
+		System.out.println(person);	
+		//System.out.println(details);
 		
 		
 		sc.close();
