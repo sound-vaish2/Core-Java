@@ -1,5 +1,6 @@
 package com.vs.java.Collections;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListExample {
@@ -54,5 +55,9 @@ public class LinkedListExample {
 		int res4 = list.pollFirst();
 		System.out.println("pollFirst method : " + res4);
 		System.out.println(" final list : " + list);
+		//returns an iterator of list proper sequence
+		//Iterator<Integer> res5 = list.iterator();
+		System.out.println("Iterator :" + list.iterator());
+		
 	}
 }
