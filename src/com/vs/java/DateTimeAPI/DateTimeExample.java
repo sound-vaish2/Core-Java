@@ -40,8 +40,8 @@ public class DateTimeExample {
 		//Date Time Formatter methods
 		DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
 		System.out.println(date.format(formatter));
-		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd/mm/yyyy");
-		String text = "12/08/2016";
+		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		String text = "12/04/2017";
 		LocalDate dateNew = LocalDate.parse(text, formatter1) ;
 		System.out.println("Date format :"+ dateNew);
 		}
