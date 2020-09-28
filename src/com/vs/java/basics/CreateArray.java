@@ -14,12 +14,14 @@ public class CreateArray {
 		// TODO Auto-generated method stub
 // 		int arr[];
 //		System.out.println("Enter the size of the array:");
-//		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 //		int N = sc.nextInt();
 //		sc.close();
 //		arr = new int[N];
 		
 		int arr1[] = {1,2,3,4,5,6};
+		//arr.length finds the length of array
+		System.out.println(arr1.length);
 		int i;
 		//Scanner array_input = new Scanner(System.in);
 		try{
@@ -36,6 +38,17 @@ public class CreateArray {
 		finally {
 			System.out.println("This is the output");
 		}
+		//Delete an element from array code--
+		System.out.println("Enter the position of element to delete : ");
+		int pos = sc.nextInt();
+		for(int i1 = pos-1; i1<arr1.length-1;i1++) {
+			arr1[i1] = arr1[i1+1];
+		}
+		//print the new array
+		for(int i1=0;i1<arr1.length-1;i1++) {
+			System.out.println(arr1[i1]);
+		}
+		sc.close();
 //		for(i = 0; i<=N ; i++) {
 //			
 //			int num  = array_input.nextInt();

@@ -43,7 +43,9 @@ public class StringHandling {
 		//returns string in Uppercase
 		System.out.println(InputString.toUpperCase());
 		//replace alternate characters with uppercase
-		System.out.println(InputString);
+		char Au = InputString.charAt(0);
+		
+		System.out.println(InputString.charAt(0)+ InputString.substring(1,InputString.length()));
 		char[] ch =  InputString.toCharArray();
 		for(int i=0; i<ch.length; i=i+2){
 	         ch[i] = Character.toUpperCase(ch[i]);
