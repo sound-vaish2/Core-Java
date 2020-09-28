@@ -22,7 +22,19 @@ public class CreateArray {
 		int arr1[] = {1,2,3,4,5,6};
 		//arr.length finds the length of array
 		System.out.println(arr1.length);
+		int size = arr1.length;
 		int i;
+		//rotation of array
+		int res = arr1[size-1];
+		for( i = size-1 ;i > 0;i--)
+		{
+			 arr1[i] = arr1[i-1];
+		}
+		arr1[0] = res;
+		//print the array
+		for(int i1=0;i1<size;i1++) {
+			System.out.println(arr1[i1]);
+		}
 		//Scanner array_input = new Scanner(System.in);
 		try{
 			for(i = 0; i<6 ; i++) {
