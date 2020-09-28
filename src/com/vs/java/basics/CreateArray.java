@@ -26,13 +26,13 @@ public class CreateArray {
 		//Scanner array_input = new Scanner(System.in);
 		try{
 			for(i = 0; i<6 ; i++) {
-			System.out.println( i + "th element is: " + arr1[i]);
+			System.out.println( i+1 + "th element is: " + arr1[i]);
 		}
 		}
 		catch(IndexOutOfBoundsException e) {
 			System.out.println("array out of bounds");
 			for(i = 0; i<6 ; i++) {
-				System.out.println( i + "th element is: " + arr1[i]);
+				System.out.println( i+1 + "th element is: " + arr1[i]);
 			}
 		}
 		finally {
@@ -41,6 +41,8 @@ public class CreateArray {
 		//Delete an element from array code--
 		System.out.println("Enter the position of element to delete : ");
 		int pos = sc.nextInt();
+		//store the element in another variable
+		int element = arr1[pos-1];
 		for(int i1 = pos-1; i1<arr1.length-1;i1++) {
 			arr1[i1] = arr1[i1+1];
 		}
@@ -48,6 +50,8 @@ public class CreateArray {
 		for(int i1=0;i1<arr1.length-1;i1++) {
 			System.out.println(arr1[i1]);
 		}
+		//print the element
+		System.out.println("The element deleted was : " + element);
 		sc.close();
 //		for(i = 0; i<=N ; i++) {
 //			
