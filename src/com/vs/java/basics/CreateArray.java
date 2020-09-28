@@ -23,47 +23,57 @@ public class CreateArray {
 		//arr.length finds the length of array
 		System.out.println(arr1.length);
 		int size = arr1.length;
-		int i;
+		int i ,count=0,times;
 		//rotation of array
+		System.out.println("Enter the number of times you want to rotate the array : ");
+		times = sc.nextInt();
+		while(count != times)
+		{
 		int res = arr1[size-1];
 		for( i = size-1 ;i > 0;i--)
 		{
 			 arr1[i] = arr1[i-1];
 		}
 		arr1[0] = res;
+		count++;
+		}
 		//print the array
 		for(int i1=0;i1<size;i1++) {
 			System.out.println(arr1[i1]);
 		}
+		
+		//to implemente rest of codes uncommet them
+		
+		
 		//Scanner array_input = new Scanner(System.in);
-		try{
-			for(i = 0; i<6 ; i++) {
-			System.out.println( i+1 + "th element is: " + arr1[i]);
-		}
-		}
-		catch(IndexOutOfBoundsException e) {
-			System.out.println("array out of bounds");
-			for(i = 0; i<6 ; i++) {
-				System.out.println( i+1 + "th element is: " + arr1[i]);
-			}
-		}
-		finally {
-			System.out.println("This is the output");
-		}
-		//Delete an element from array code--
-		System.out.println("Enter the position of element to delete : ");
-		int pos = sc.nextInt();
-		//store the element in another variable
-		int element = arr1[pos-1];
-		for(int i1 = pos-1; i1<arr1.length-1;i1++) {
-			arr1[i1] = arr1[i1+1];
-		}
-		//print the new array
-		for(int i1=0;i1<arr1.length-1;i1++) {
-			System.out.println(arr1[i1]);
-		}
-		//print the element
-		System.out.println("The element deleted was : " + element);
+//		try{
+//			for(i = 0; i<6 ; i++) {
+//			System.out.println( i+1 + "th element is: " + arr1[i]);
+//		}
+//		}
+//		catch(IndexOutOfBoundsException e) {
+//			System.out.println("array out of bounds");
+//			for(i = 0; i<6 ; i++) {
+//				System.out.println( i+1 + "th element is: " + arr1[i]);
+//			}
+//		}
+//		finally {
+//			System.out.println("This is the output");
+//		}
+//		//Delete an element from array code--
+//		System.out.println("Enter the position of element to delete : ");
+//		int pos = sc.nextInt();
+//		//store the element in another variable
+//		int element = arr1[pos-1];
+//		for(int i1 = pos-1; i1<arr1.length-1;i1++) {
+//			arr1[i1] = arr1[i1+1];
+//		}
+//		//print the new array
+//		for(int i1=0;i1<arr1.length-1;i1++) {
+//			System.out.println(arr1[i1]);
+//		}
+//		//print the element
+//		System.out.println("The element deleted was : " + element);
 		sc.close();
 //		for(i = 0; i<=N ; i++) {
 //			
