@@ -1,4 +1,4 @@
-package com.vs.java.basics;
+package com.vs.java.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 //create array
