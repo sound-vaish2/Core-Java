@@ -44,6 +44,9 @@ public class ArrayRotation {
 		rotation.Print(arr);
 		
 	}
+	//Another method both left and right rotation 
+	//uncommet this
+	
 //		int arr1[] = {1,2,3,4,5,6};
 //		Scanner sc = new Scanner(System.in);
 //		//arr.length finds the length of array
@@ -52,7 +55,6 @@ public class ArrayRotation {
 //		int i ,count=0,times;
 //		
 //		// Right rotation of array
-//		
 //		System.out.println("Enter the number of times you want to rotate the array : ");
 //		times = sc.nextInt();
 //		System.out.println("Enter the rotation you want do :"+"\n"+" 1.Right rotation" + "\n" + " 2.Left rotation");
@@ -70,11 +72,11 @@ public class ArrayRotation {
 //			arr1[0] = res;
 //			count++;
 //		}
-//		//print the array
+////		//print the array
 //		for(int i1=0;i1<size;i1++) {
 //			System.out.println(arr1[i1]);
 //		}
-//		//end of if statement
+////		//end of if statement
 //		}
 //		else {
 //		//Left rotation of array
@@ -89,7 +91,7 @@ public class ArrayRotation {
 //			count ++ ;
 //			
 //		}
-//		//print the array
+////		//print the array
 //		for(int i1=0;i1<size;i1++) {
 //			System.out.println(arr1[i1]);
 //		}
