@@ -16,7 +16,7 @@ public class ArrayListExample {
 		//ArrayList<Integer> list3 = new ArrayList<Integer>();
 		//ArrayList
 		System.out.println(list);
-		//appends the specified element to list
+		//appends the specified element to list //List
 		list.add(43);
 		list.add(54);
 		list.add(67);
