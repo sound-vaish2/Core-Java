@@ -51,5 +51,32 @@ public class SumOfHourglass {
 	        System.out.print(obj.max_value);
 	        scanner.close();
 	    }
-			
+
+
+
+	//Another method with low time complexity
+	//uncomment this
+
+//	int sum;
+//	int maxi = -100000;
+//	int x = 0 ;
+//	int y =0;
+//	for (int k = 1; k <= 16; k++) {
+//
+//	    int[][] arr;
+//		sum = arr[y][x] + arr[y][x + 1] + arr[y][x + 2]
+//	            + arr[y + 1][x + 1]
+//	            + arr[y + 2][x] + arr[y + 2][x + 1] + arr[y + 2][x + 2];
+//	    x++;
+//
+//	    if ((k % 4 == 0)) {
+//	            x = 0;
+//	            y++;
+//	    }
+//
+//	    if(sum > maxi)
+//	            maxi  = sum; 
+//	}
+//	System.out.println(maxi);
+
 }
