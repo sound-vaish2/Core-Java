@@ -72,7 +72,7 @@ public class CreateBSTwithRecursion {
 	public static void main(String[] args) {
 		CreateBSTwithRecursion tree = new CreateBSTwithRecursion();
 		tree.createBST(20);
-		//tree.insertBST(root,20);
+		// tree.insertBST(root,20);
 		tree.insertBST(root, 13);
 		tree.insertBST(root, 3);
 		tree.insertBST(root, 30);
