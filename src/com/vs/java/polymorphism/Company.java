@@ -22,9 +22,10 @@ public class Company {
 	}
 
 }
-final class Branch extends Company{
+final class Branch extends Company
+{
 	@overriden
-	void EmployeeName(String name) {
+	void EmployeeName(String name){
 		System.out.println(name);
 	}
 }
