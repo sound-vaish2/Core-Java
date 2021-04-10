@@ -1,5 +1,5 @@
 package com.vs.java.problems;
-
+//USE OF PREFIX SUM ARRAY 
 import java.util.ArrayList;
 import java.util.List;
 //SOURCE : GFG
