@@ -14,9 +14,9 @@ public class SumOfQueries {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 List<Integer> result = new ArrayList<Integer>();
-		    int[] arr = {1,2,3,4};
-		    int n = 4;
-		    int[] queries = {1,4,2,3}; 
+		    int[] arr = {3,5,1,2,4};
+		    int n = 5;
+		    int[] queries = {1,5,3,5}; 
 	        int[] prefix_sum = new int[n];
 	        prefix_sum[0] = arr[0];
 	        //create prefix sum array 
