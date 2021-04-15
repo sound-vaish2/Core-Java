@@ -21,14 +21,14 @@ public class AkkuAndBinaryNumbers {
         long L = sc.nextLong();
         long R = sc.nextLong();
         long temp;
-        while(L < R)
+        while(L <= R)
         {   
         	
         	//System.out.println("here");
                 //long temp = (L>>1)&1;
               //  long one = 1;
         	temp = L;
-            for( int i=0; i<32 ;i++)
+            for( int i=0; i<64 ;i++)
             {  
               	
                 if( (temp & 1) == 1)
