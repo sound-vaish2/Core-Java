@@ -8,7 +8,7 @@ public class ArrayListExample {
 	public ArrayListExample() {
 		// TODO Auto-generated constructor stub
 	}
-
+	//List
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -26,6 +26,9 @@ public class ArrayListExample {
 		//add element to specified location
 		list.add(1, 64);
 		System.out.println("add 64 " +list);
+		//add element to last index
+		list.add(6, 78);
+		System.out.println("add 78 to last  " +list);
 		//remove specified index
 		list.remove(2);
 		System.out.println("remove 54 " +list);
@@ -34,7 +37,7 @@ public class ArrayListExample {
 		//list2
 		list2.add(34);
 		list2.add(59);
-		System.out.println( " list2" + list2);
+		System.out.println( "list2" + list2);
 		//Compares the specified object with this list for equality.
 		System.out.println("equals result for list and list2: " + list.equals(list2));
 		//clears all the list
