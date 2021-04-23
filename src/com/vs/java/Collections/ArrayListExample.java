@@ -1,6 +1,7 @@
 package com.vs.java.Collections;
 //Array List and methods
 import java.util.ArrayList;
+import java.util.Iterator;
 //import java.util.LinkedList;
 
 public class ArrayListExample {
@@ -68,6 +69,11 @@ public class ArrayListExample {
 		System.out.println("set with 22 at index 1:  " + list);
 		//sublist = returns the sublis from specifed index to specified index 
 		System.out.println("sublist :  " + list.subList(3, 5));
+		Iterator it = list.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
 		
 	}
 
