@@ -44,7 +44,7 @@ public class HashMapExample {
 		//returns the values 
 		System.out.println(map.values());
 		
-		
+		//Comparator
 	}
 
 }
