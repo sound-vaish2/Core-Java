@@ -1,6 +1,7 @@
 package com.vs.java.Collections;
 //Array List and methods
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 //import java.util.LinkedList;
 
@@ -74,6 +75,7 @@ public class ArrayListExample {
 		{
 			System.out.println(it.next());
 		}
+		
 		
 	}
 
