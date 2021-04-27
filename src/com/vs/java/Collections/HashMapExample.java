@@ -45,7 +45,11 @@ public class HashMapExample {
 		//returns the values 
 		System.out.println(map.values());
 		
-		
+		//Iteratoring through hashmap 
+		for( Map.Entry<Integer, String> entry : map.entrySet()) 
+		{
+			System.out.println("Key = " + entry.getKey() + "  Value = " + entry.getValue());
+		}
 		
 	}
 
