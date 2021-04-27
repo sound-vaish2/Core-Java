@@ -3,6 +3,7 @@ package com.vs.java.Collections;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class HashMapExample {
 //HashMap
@@ -44,7 +45,8 @@ public class HashMapExample {
 		//returns the values 
 		System.out.println(map.values());
 		
-		//Comparator
+		
+		
 	}
 
 }
