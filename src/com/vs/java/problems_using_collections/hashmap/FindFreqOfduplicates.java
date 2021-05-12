@@ -1,7 +1,7 @@
 package com.vs.java.problems_using_collections.hashmap;
 import java.util.*;
 public class FindFreqOfduplicates {
-
+//Find the frequency of duplicates in O(n) time complexity 
 	public static void main(String[] args) {
 		Map<Integer, Integer> map = new HashMap<>(); 
 		Scanner sc = new Scanner(System.in);

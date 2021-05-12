@@ -11,13 +11,13 @@ public class FindElementsWithSUMk {
 	public static void main(String[] args) {
 		List<Integer> result = new ArrayList<Integer>();
 		List<Integer> list = new ArrayList<Integer>();
-		list.add(3);
-		list.add(4);
-		list.add(5);
-		list.add(6);
-		list.add(8);
 		list.add(2);
-		list.add(1);
+		list.add(2);
+		list.add(4);
+		list.add(3);
+//		list.add(8);
+//		list.add(2);
+//		list.add(1);
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		int list_size = list.size();
 		for( int i=0 ; i<list_size; i++)
@@ -27,19 +27,19 @@ public class FindElementsWithSUMk {
 
 		//Iteratoring through hashmap 
 		//Display hashmap
-//		for( Map.Entry<Integer, Integer> entry : map.entrySet()) 
-//		{
-//			System.out.println("Key = " + entry.getKey() + "  Value = " + entry.getValue());
-//		}
-		int k = 9;
+		for( Map.Entry<Integer, Integer> entry : map.entrySet()) 
+		{
+			System.out.println("Key = " + entry.getKey() + "  Value = " + entry.getValue());
+		}
+		int k = 4;
 		for( int i=0 ; i<list_size; i++)
 		{
 			int value = list.get(i);
 			int temp = k - value;
-			if(map.containsKey(temp)) 
+			if(map.containsKey(temp) && map.get(temp) != i) 
 			{
 				result.add(list.indexOf(value) + 1);
-				result.add(list.indexOf(temp) + 1);
+				result.add(map.get(temp) + 1);
 				break;
 				
 			}
