@@ -7,6 +7,7 @@ public class BoringStrings {
 	public static void main(String[] args) {
 		
 		String input = "abcd";
+		
 		String even = "";
 		String odd = "";
 		int cnt = 0;
